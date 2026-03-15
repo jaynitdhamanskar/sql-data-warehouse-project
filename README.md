@@ -33,121 +33,63 @@ The project follows the **Medallion Architecture**, consisting of Bronze, Silver
 
 ---
 
-# 📖 Project Overview
+## 📖 Project Overview
 
-This project demonstrates the complete lifecycle of building a data warehouse:
+This project involves:
 
-### Data Architecture
+1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
+2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
+4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
 
-Designing a **modern data warehouse using the Medallion Architecture**.
-
-### ETL Pipelines
-
-Building SQL pipelines to:
-
-* Extract data from source systems
-* Transform and clean the data
-* Load the data into structured warehouse layers
-
-### Data Modeling
-
-Designing **fact and dimension tables** to support analytical queries.
-
-### Analytics & Reporting
-
-Developing **SQL-based analysis** to generate meaningful insights from the data.
+🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
+- SQL Development
+- Data Architect
+- Data Engineering  
+- ETL Pipeline Developer  
+- Data Modeling  
+- Data Analytics  
 
 ---
 
-# 🎯 Skills Demonstrated
+## 🛠️ Important Links & Tools:
 
-This project showcases expertise in:
-
-* SQL Development
-* Data Warehousing
-* Data Engineering
-* ETL Pipeline Development
-* Data Modeling (Star Schema)
-* Data Analytics
-* Data Architecture
-
----
-
-# 🛠️ Tools & Technologies
-
-The following tools were used to build this project:
-
-* **SQL Server Express** – Database engine
-* **SQL Server Management Studio (SSMS)** – Database management
-* **Git & GitHub** – Version control
-* **Draw.io** – Architecture and data modeling diagrams
-* **CSV Datasets** – Source data
+Everything is for Free!
+- **[Datasets](datasets/):** Access to the project dataset (csv files).
+- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
+- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
+- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
+- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
+- **[Notion](https://www.notion.com/templates/sql-data-warehouse-project):** Get the Project Template from Notion
+- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4):** Access to All Project Phases and Tasks.
 
 ---
 
-# 🚀 Project Requirements
+## 🚀 Project Requirements
 
-## Building the Data Warehouse (Data Engineering)
+### Building the Data Warehouse (Data Engineering)
 
-### Objective
+#### Objective
+Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-Develop a **SQL Server data warehouse** to integrate and analyze sales data from multiple systems.
-
-### Specifications
-
-**Data Sources**
-
-Data is imported from two systems:
-
-* ERP system (CSV files)
-* CRM system (CSV files)
-
-**Data Quality**
-
-The ETL pipeline handles:
-
-* Missing values
-* Standardization
-* Data cleansing
-
-**Data Integration**
-
-Data from both sources is integrated into a **single analytical model**.
-
-**Scope**
-
-* Focuses on the **latest dataset**
-* Historical tracking is **not included**
-
-**Documentation**
-
-Clear documentation is provided to help both:
-
-* Business users
-* Data analysts
+#### Specifications
+- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
+- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
+- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
+- **Scope**: Focus on the latest dataset only; historization of data is not required.
+- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
 ---
 
-# 📊 Analytics & Reporting
+### BI: Analytics & Reporting (Data Analysis)
 
-The Gold Layer enables analytics to answer important business questions such as:
+#### Objective
+Develop SQL-based analytics to deliver detailed insights into:
+- **Customer Behavior**
+- **Product Performance**
+- **Sales Trends**
 
-### Customer Behavior
-
-* Who are the top customers?
-* What purchasing patterns exist?
-
-### Product Performance
-
-* Which products generate the most revenue?
-* Which products perform poorly?
-
-### Sales Trends
-
-* How do sales change over time?
-* Which regions generate the highest sales?
-
-These insights help organizations **make data-driven decisions**.
+These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
 
 ---
 
