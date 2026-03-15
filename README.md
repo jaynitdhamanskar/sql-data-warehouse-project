@@ -11,7 +11,7 @@ The project follows industry best practices in **data engineering, data modeling
 
 The project follows the **Medallion Architecture**, consisting of Bronze, Silver, and Gold layers.
 
-!
+![image](docs/Architecture.drawio.png)
 
 ### Bronze Layer
 
