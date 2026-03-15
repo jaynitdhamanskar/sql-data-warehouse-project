@@ -160,10 +160,9 @@ data-warehouse-project/
 ├── datasets/                         # Raw datasets (ERP & CRM source data)
 │
 ├── docs/                             # Documentation and architecture diagrams
-│   ├── etl.drawio
-│   ├── data_architecture.drawio
+│   ├── architecture.drawio
 │   ├── data_catalog.md
-│   ├── data_flow.drawio
+│   ├── data_flow_diagram.drawio
 │   ├── data_models.drawio
 │   ├── naming_conventions.md
 │
@@ -174,10 +173,8 @@ data-warehouse-project/
 │
 ├── tests/                            # Data quality tests
 │
-├── README.md                         # Project documentation
 ├── LICENSE                           # License file
-├── .gitignore                        # Git ignored files
-└── requirements.txt                  # Project dependencies
+└── README.md                         # Project documentation
 ```
 
 ---
