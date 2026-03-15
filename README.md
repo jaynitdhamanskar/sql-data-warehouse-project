@@ -120,55 +120,6 @@ data-warehouse-project/
 
 ---
 
-# 🔄 ETL Pipeline Workflow
-
-The ETL pipeline processes data through three layers:
-
-### Step 1 — Load Bronze Layer
-
-Raw data is loaded from **CSV files into SQL Server tables**.
-
-### Step 2 — Transform to Silver Layer
-
-Data is cleaned, standardized, and prepared for analytics.
-
-### Step 3 — Build Gold Layer
-
-Data is transformed into **Fact and Dimension tables**.
-
-This structure ensures:
-
-* Data consistency
-* Improved query performance
-* Reliable analytics
-
----
-
-# 🧪 Data Quality Checks
-
-Quality tests are included to ensure reliable data.
-
-Examples include:
-
-* Duplicate record detection
-* Null value validation
-* Data consistency checks
-* Referential integrity validation
-
----
-
-# 📚 Documentation
-
-Additional documentation can be found in the **docs** folder:
-
-* Data Architecture Diagram
-* Data Flow Diagram
-* Data Models (Star Schema)
-* Data Catalog
-* Naming Conventions
-
----
-
 # 🛡️ License
 
 This project is licensed under the **MIT License**.
