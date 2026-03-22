@@ -47,12 +47,12 @@ This project involves:
 
 ## 🛠️ Tools:
 
-- **[Datasets](datasets/):** Access to the project dataset (csv files).
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
+- **[Datasets](datasets/):** Source data used in the project, including ERP and CRM datasets in CSV format.
+- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Database engine used to store, process, and manage the data warehouse.
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
-- **[Notion Project Steps](https://www.notion.so/Data-Warehouse-Project-3199ef76463480a18c05c0aa222368e8?source=copy_link):** Access to All Project Phases and Tasks.
+- **[Git Repository](https://github.com/):** Version control platform used to manage code, track changes, and collaborate.
+- **[DrawIO](https://www.drawio.com/):** Tool used to design architecture diagrams, data models, and data flow visualizations.
+- **[Notion Project Steps](https://www.notion.so/Data-Warehouse-Project-3199ef76463480a18c05c0aa222368e8?source=copy_link):** Documentation of project phases, implementation steps, and overall workflow.
 
 ---
 
