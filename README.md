@@ -52,7 +52,6 @@ This project involves:
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
 - **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 - **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
-- **[Notion](https://www.notion.com/templates/sql-data-warehouse-project):** Get the Project Template from Notion
 - **[Notion Project Steps](https://www.notion.so/Data-Warehouse-Project-3199ef76463480a18c05c0aa222368e8?source=copy_link):** Access to All Project Phases and Tasks.
 
 ---
