@@ -1,86 +1,85 @@
-# SQL Data Warehouse and Analytics Project
+# 📊 Sales & Customer Insights Data Platform
 
-Welcome to the **SQL Data Warehouse and Analytics Project** repository!
-This project demonstrates how to design and build a **modern data warehouse using SQL Server**, implementing ETL pipelines and preparing business-ready data for analytics.
+A complete **end-to-end data engineering and analytics project** built using **SQL Server + Power BI**, designed to demonstrate how raw data is transformed into actionable business insights.
 
-The project follows industry best practices in **data engineering, data modeling, and analytics** and is designed as a **portfolio project to demonstrate real-world data warehouse development**.
+This project follows **modern data warehouse principles** and delivers a **fully functional BI dashboard** covering:
+
+* Executive Overview
+* Customer Insights
+* Product Performance
+
+---
+
+# 🧠 Project Highlights
+
+* 🏗️ Built a **Medallion Architecture (Bronze → Silver → Gold)**
+* 🔄 Designed **ETL pipelines using SQL**
+* 📊 Created **analytics-ready star schema (Fact & Dimension tables)**
+* 📈 Developed **interactive Power BI dashboards**
+* 🎯 Delivered insights on **sales, customers, and product performance**
 
 ---
 
 # 🏗️ Data Architecture
 
-The project follows the **Medallion Architecture**, consisting of Bronze, Silver, and Gold layers.
+The project follows the **Medallion Architecture**:
 
-![image](docs/architecture_drawio.png)
+![Architecture](docs/architecture_drawio.png)
 
-### Bronze Layer
+### 🥉 Bronze Layer (Raw)
 
-* Stores **raw data** from source systems.
-* Data is loaded directly from **CSV files** into SQL Server tables.
-* No transformations are applied.
+* Ingests raw data from **ERP & CRM CSV files**
+* Stored as-is in SQL Server
+* No transformations applied
 
-### Silver Layer
+### 🥈 Silver Layer (Cleaned)
 
-* Performs **data cleansing and transformation**.
-* Standardizes formats and removes inconsistencies.
-* Prepares data for analytical modeling.
+* Data cleaning & standardization
+* Handles missing values, duplicates, inconsistencies
+* Prepares structured datasets
 
-### Gold Layer
+### 🥇 Gold Layer (Analytics)
 
-* Contains **analytics-ready datasets**.
-* Data is modeled into **Fact and Dimension tables (Star Schema)**.
-* Optimized for reporting and BI tools.
-* Includes **analytical SQL queries and reporting views** for business insights.
+* Star schema modeling:
 
----
-
-## 📖 Project Overview
-
-This project involves:
-
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics**: Creating advanced SQL queries for business insights.
-4. **Reporting**: Built reusable views for customers and product analysis.
----
-
-## 🛠️ Tools:
-
-- **[Datasets](datasets/):** Source data used in the project, including ERP and CRM datasets in CSV format.
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Database engine used to store, process, and manage the data warehouse.
-- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
-- **[Git Repository](https://github.com/):** Version control platform used to manage code, track changes, and collaborate.
-- **[DrawIO](https://www.drawio.com/):** Tool used to design architecture diagrams, data models, and data flow visualizations.
-- **[Notion Project Steps](https://www.notion.so/Data-Warehouse-Project-3199ef76463480a18c05c0aa222368e8?source=copy_link):** Documentation of project phases, implementation steps, and overall workflow.
+  * Fact tables (Sales)
+  * Dimension tables (Customer, Product, Date)
+* Optimized for reporting
+* Includes **business-ready views**
 
 ---
 
-## 🚀 Project Requirements
+# 📊 BI & Dashboard Layer
 
-### Building the Data Warehouse (Data Engineering)
+Power BI dashboards are built on top of the **Gold Layer**, ensuring:
 
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+* High performance
+* Reusability
+* Consistent business logic
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
+## 🖥️ Dashboard Pages
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+### 1️⃣ Executive Overview
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+* Total Sales, Orders, Quantity, AOV
+* Revenue by Country
+* Category Contribution
+* Sales Trend Over Time
+
+### 2️⃣ Customer Insights
+
+* Customer Segmentation (New, VIP, Regular)
+* Age Group Distribution
+* Recency Analysis (Active, At Risk, Inactive)
+* Avg Monthly Spend
+
+### 3️⃣ Product Performance
+
+* Top 10 Products by Revenue
+* Price Segment Contribution
+* Product Performance Quadrant (Sales vs Quantity)
 
 ---
 
@@ -90,31 +89,93 @@ These insights empower stakeholders with key business metrics, enabling strategi
 data-warehouse-project/
 
 │
-├── datasets/                         # Raw datasets (ERP & CRM source data)
+├── datasets/                         # Raw ERP & CRM data
 │
-├── docs/                             # Documentation and architecture diagrams
+├── docs/                             # Documentation & diagrams
 │   ├── architecture.drawio
-│   ├── data_catalog.md
 │   ├── data_flow_diagram.drawio
 │   ├── data_models.drawio
+│   ├── data_catalog.md
 │   ├── naming_conventions.md
 │
-├── scripts/                          # SQL scripts for ETL pipelines
-│   ├── bronze/                       # Raw data ingestion scripts
-│   ├── silver/                       # Data cleaning and transformation
-│   ├── gold/                         # Analytical data models
+├── scripts/                          # SQL ETL pipelines
+│   ├── bronze/                       # Raw ingestion
+│   ├── silver/                       # Cleaning & transformation
+│   ├── gold/                         # Star schema & views
 │
-├── tests/                            # Data quality tests
+├── tests/                            # Data quality checks
 │
-└── README.md                         # Project documentation
+├── dashboard/                        # Power BI files
+│   └── sales_customer_insights.pbix
+│
+└── README.md
 ```
+
+---
+
+# ⚙️ Tech Stack
+
+| Layer           | Technology                     |
+| --------------- | ------------------------------ |
+| Data Storage    | SQL Server                     |
+| ETL Processing  | T-SQL                          |
+| Data Modeling   | Star Schema                    |
+| Architecture    | Medallion (Bronze/Silver/Gold) |
+| Visualization   | Power BI                       |
+| Documentation   | Draw.io                        |
+| Version Control | Git & GitHub                   |
+
+---
+
+# 🔄 Data Pipeline Flow
+
+1. Extract raw data from ERP & CRM (CSV)
+2. Load into Bronze layer (SQL Server)
+3. Transform & clean in Silver layer
+4. Model into Fact & Dimension tables (Gold)
+5. Create reporting views
+6. Connect Power BI to Gold layer
+7. Build interactive dashboards
+
+---
+
+# 📈 Key Business Insights Delivered
+
+* 💰 Revenue trends across time and geography
+* 🧑‍🤝‍🧑 Customer segmentation & behavior patterns
+* 🔁 Customer retention via recency analysis
+* 🛍️ Product performance and pricing insights
+* 📊 Sales vs Quantity quadrant analysis
+
+---
+
+# 🚀 How to Use
+
+1. Clone the repository
+2. Load datasets into SQL Server
+3. Run SQL scripts in order:
+
+   * Bronze → Silver → Gold
+4. Open Power BI file:
+
+   ```
+   dashboard/sales_customer_insights.pbix
+   ```
+5. Connect to your SQL Server instance
+
+---
+
+# 🎯 Why This Project Matters
+
+This project demonstrates:
+
+* Real-world **data engineering workflow**
+* Strong **SQL + data modeling skills**
+* Ability to build **business-ready dashboards**
+* Understanding of **analytics-driven decision making**
 
 ---
 
 # 👨‍💻 Author
 
 **Jaynit Dhamanskar**
-
-This project was created as a **portfolio project to demonstrate practical data engineering and SQL data warehousing skills.**
-
-If you found this project helpful or interesting, feel free to ⭐ star the repository.
