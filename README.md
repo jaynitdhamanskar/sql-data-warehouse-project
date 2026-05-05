@@ -118,7 +118,6 @@ data-warehouse-project/
 | Layer           | Technology                     |
 | --------------- | ------------------------------ |
 | Data Storage    | SQL Server                     |
-| ETL Processing  | T-SQL                          |
 | Data Modeling   | Star Schema                    |
 | Architecture    | Medallion (Bronze/Silver/Gold) |
 | Visualization   | Power BI                       |
@@ -146,36 +145,3 @@ data-warehouse-project/
 * 🔁 Customer retention via recency analysis
 * 🛍️ Product performance and pricing insights
 * 📊 Sales vs Quantity quadrant analysis
-
----
-
-# 🚀 How to Use
-
-1. Clone the repository
-2. Load datasets into SQL Server
-3. Run SQL scripts in order:
-
-   * Bronze → Silver → Gold
-4. Open Power BI file:
-
-   ```
-   dashboard/sales_customer_insights.pbix
-   ```
-5. Connect to your SQL Server instance
-
----
-
-# 🎯 Why This Project Matters
-
-This project demonstrates:
-
-* Real-world **data engineering workflow**
-* Strong **SQL + data modeling skills**
-* Ability to build **business-ready dashboards**
-* Understanding of **analytics-driven decision making**
-
----
-
-# 👨‍💻 Author
-
-**Jaynit Dhamanskar**
