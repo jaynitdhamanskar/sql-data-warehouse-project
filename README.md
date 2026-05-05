@@ -1,4 +1,4 @@
-# 📊 Sales & Customer Insights Data Platform
+# 📊 Data Warehouse Project
 
 A complete **end-to-end data engineering and analytics project** built using **SQL Server + Power BI**, designed to demonstrate how raw data is transformed into actionable business insights.
 
