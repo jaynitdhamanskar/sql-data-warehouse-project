@@ -127,7 +127,7 @@ Product-level sales and revenue analysis including:
 - Revenue Contribution
 - Product Performance Quadrant
 
-![Product Performance]()
+![Product Performance](https://github.com/jaynitdhamanskar/sql-data-warehouse-project/blob/main/docs/product_performance.png)
 
 ---
 
