@@ -101,7 +101,7 @@ The model includes:
 - Date dimension
 - Centralized DAX measures table
 
-![Data Model]([docs/data_model.png](https://github.com/jaynitdhamanskar/sql-data-warehouse-project/blob/main/docs/data_model.png))
+![Data Model](https://github.com/jaynitdhamanskar/sql-data-warehouse-project/blob/main/docs/data_model.png)
 
 ---
 
