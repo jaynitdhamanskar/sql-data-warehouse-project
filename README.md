@@ -1,147 +1,185 @@
-# 📊 Data Warehouse Project
+# Data Warehouse Project
 
-A complete **end-to-end data engineering and analytics project** built using **SQL Server + Power BI**, designed to demonstrate how raw data is transformed into actionable business insights.
+## Overview
 
-This project follows **modern data warehouse principles** and delivers a **fully functional BI dashboard** covering:
+Designed and implemented an end-to-end data warehouse and analytics solution using SQL Server and Power BI.
 
-* Executive Overview
-* Customer Insights
-* Product Performance
+The project follows Medallion Architecture (Bronze → Silver → Gold) to transform raw ERP and CRM datasets into analytics-ready business models and interactive dashboards.
 
----
-
-# 🧠 Project Highlights
-
-* 🏗️ Built a **Medallion Architecture (Bronze → Silver → Gold)**
-* 🔄 Designed **ETL pipelines using SQL**
-* 📊 Created **analytics-ready star schema (Fact & Dimension tables)**
-* 📈 Developed **interactive Power BI dashboards**
-* 🎯 Delivered insights on **sales, customers, and product performance**
+The solution includes:
+- SQL-based ETL pipelines
+- Data cleansing and transformation
+- Star schema modeling
+- KPI reporting and business analytics
+- Interactive Power BI dashboards
 
 ---
 
-# 🏗️ Data Architecture
+## Project Highlights
 
-The project follows the **Medallion Architecture**:
+- Built a complete Bronze, Silver, and Gold layer architecture
+- Integrated ERP and CRM datasets into SQL Server
+- Processed business data containing:
+  - $29.36M total sales
+  - 28K orders
+  - 18K customers
+- Developed 3 analytical dashboards covering:
+  - Executive reporting
+  - Customer analytics
+  - Product performance
+- Implemented customer segmentation, recency analysis, and KPI reporting using advanced SQL
+
+---
+
+# Architecture
+
+The project follows Medallion Architecture for scalable data processing and analytics.
 
 ![Architecture](docs/architecture_drawio.png)
 
-### 🥉 Bronze Layer (Raw)
+---
 
-* Ingests raw data from **ERP & CRM CSV files**
-* Stored as-is in SQL Server
-* No transformations applied
+# Technology Stack
 
-### 🥈 Silver Layer (Cleaned)
-
-* Data cleaning & standardization
-* Handles missing values, duplicates, inconsistencies
-* Prepares structured datasets
-
-### 🥇 Gold Layer (Analytics)
-
-* Star schema modeling:
-
-  * Fact tables (Sales)
-  * Dimension tables (Customer, Product, Date)
-* Optimized for reporting
-* Includes **business-ready views**
+| Layer | Technology |
+|---|---|
+| Data Storage | SQL Server |
+| ETL & Transformation | SQL |
+| Data Modeling | Star Schema |
+| Visualization | Power BI |
+| Documentation | Draw.io |
+| Version Control | Git & GitHub |
 
 ---
 
-# 📊 BI & Dashboard Layer
+# Data Architecture
 
-Power BI dashboards are built on top of the **Gold Layer**, ensuring:
+## Bronze Layer
 
-* High performance
-* Reusability
-* Consistent business logic
+Raw ERP and CRM datasets are ingested into SQL Server without transformations.
 
----
-
-## 🖥️ Dashboard Pages
-
-### 1️⃣ Executive Overview
-
-* Total Sales, Orders, Quantity, AOV
-* Revenue by Country
-* Category Contribution
-* Sales Trend Over Time
-
-### 2️⃣ Customer Insights
-
-* Customer Segmentation (New, VIP, Regular)
-* Age Group Distribution
-* Recency Analysis (Active, At Risk, Inactive)
-* Avg Monthly Spend
-
-### 3️⃣ Product Performance
-
-* Top 10 Products by Revenue
-* Price Segment Contribution
-* Product Performance Quadrant (Sales vs Quantity)
+Responsibilities:
+- Raw data ingestion
+- Source preservation
+- Initial storage
 
 ---
 
-# 📂 Repository Structure
+## Silver Layer
 
-```
+The Silver layer performs cleansing, standardization, and transformation.
+
+Transformations include:
+- Null handling
+- Duplicate removal
+- Standardization
+- Data type correction
+- Business rule validation
+
+---
+
+## Gold Layer
+
+The Gold layer contains analytics-ready business models optimized for reporting and dashboarding.
+
+Implemented models include:
+- Fact tables
+- Dimension tables
+- Reporting views
+- KPI aggregations
+
+---
+
+# Dashboard & Analytics
+
+Power BI dashboards were developed on top of the Gold layer to provide insights across sales, customers, and products.
+
+## Executive Overview
+
+Key metrics and sales performance analysis including:
+- Total Sales
+- Total Orders
+- Revenue Trends
+- Category Contribution
+- Country-wise Revenue
+
+![Executive Overview](https://github.com/jaynitdhamanskar/sql-data-warehouse-project/blob/main/docs/overview.png)
+
+---
+
+## Customer Insights
+
+Customer behavior and segmentation analysis including:
+- Customer Segmentation
+- Recency Analysis
+- Age Group Distribution
+- Average Monthly Spend
+
+![Customer Insights](https://github.com/jaynitdhamanskar/sql-data-warehouse-project/blob/main/docs/customer_insights.png)
+
+---
+
+## Product Performance
+
+Product-level sales and revenue analysis including:
+- Top Products by Revenue
+- Price Segment Analysis
+- Revenue Contribution
+- Product Performance Quadrant
+
+![Product Performance]()
+
+---
+
+# Repository Structure
+
+```text
 data-warehouse-project/
 
-│
-├── datasets/                         # Raw ERP & CRM data
-│
-├── docs/                             # Documentation & diagrams
-│   ├── architecture.drawio
-│   ├── data_flow_diagram.drawio
-│   ├── data_models.drawio
-│   ├── data_catalog.md
-│   ├── naming_conventions.md
-│
-├── scripts/                          # SQL ETL pipelines
-│   ├── bronze/                       # Raw ingestion
-│   ├── silver/                       # Cleaning & transformation
-│   ├── gold/                         # Star schema & views
-│
-├── tests/                            # Data quality checks
-│
-├── dashboard/                        # Power BI files
-│   └── sales_customer_insights.pbix
-│
+├── datasets/
+├── docs/
+├── scripts/
+│   ├── bronze/
+│   ├── silver/
+│   └── gold/
+├── tests/
+├── dashboard/
 └── README.md
 ```
 
 ---
 
-# ⚙️ Tech Stack
+# Data Pipeline Flow
 
-| Layer           | Technology                     |
-| --------------- | ------------------------------ |
-| Data Storage    | SQL Server                     |
-| Data Modeling   | Star Schema                    |
-| Architecture    | Medallion (Bronze/Silver/Gold) |
-| Visualization   | Power BI                       |
-| Documentation   | Draw.io                        |
-| Version Control | Git & GitHub                   |
-
----
-
-# 🔄 Data Pipeline Flow
-
-1. Extract raw data from ERP & CRM (CSV)
-2. Load into Bronze layer (SQL Server)
-3. Transform & clean in Silver layer
-4. Model into Fact & Dimension tables (Gold)
+1. Extract ERP and CRM datasets
+2. Load raw data into Bronze layer
+3. Clean and transform data in Silver layer
+4. Build analytical models in Gold layer
 5. Create reporting views
 6. Connect Power BI to Gold layer
-7. Build interactive dashboards
+7. Generate business dashboards and insights
 
 ---
 
-# 📈 Key Business Insights Delivered
+# SQL Concepts Used
 
-* 💰 Revenue trends across time and geography
-* 🧑‍🤝‍🧑 Customer segmentation & behavior patterns
-* 🔁 Customer retention via recency analysis
-* 🛍️ Product performance and pricing insights
-* 📊 Sales vs Quantity quadrant analysis
+- Common Table Expressions (CTEs)
+- Window Functions
+- Aggregations
+- Stored Procedures
+- Views
+- Ranking Functions
+- Date Functions
+- KPI Calculations
+
+---
+
+# Business Insights Delivered
+
+- Revenue trends across time and geography
+- Customer segmentation and retention analysis
+- Product performance analytics
+- Revenue contribution by category
+- Customer recency and engagement analysis
+
+---
