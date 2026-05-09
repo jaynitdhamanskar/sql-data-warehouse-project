@@ -90,6 +90,21 @@ Implemented models include:
 
 ---
 
+# Data Model
+
+The Gold layer follows a Star Schema design optimized for analytical reporting and Power BI dashboarding.
+
+The model includes:
+- Fact Sales table
+- Product dimension
+- Customer dimension
+- Date dimension
+- Centralized DAX measures table
+
+![Data Model]([docs/data_model.png](https://github.com/jaynitdhamanskar/sql-data-warehouse-project/blob/main/docs/data_model.png))
+
+---
+
 # Dashboard & Analytics
 
 Power BI dashboards were developed on top of the Gold layer to provide insights across sales, customers, and products.
